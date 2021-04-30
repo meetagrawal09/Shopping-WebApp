@@ -1,0 +1,29 @@
+
+.home{
+    max-width: 1250px;
+    /* margin auto on both sides to avoid the image being extended infinitely on the sides */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* the z-index made 1 here would help you get the white background */
+.home__row{
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.home__image{
+    width: 100%;
+    
+    /* used to give the gradient */
+    /* we give liner-gradient to bottom from a higher opacity to a zero opacity */
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
+
+    /* z-index negative implies that we can have a thing which overlaps it */
+    /* we give a negative margin for it so that the next thing just overlaps over it */
+    z-index: -1;
+    margin-bottom: -300px;
+
+}

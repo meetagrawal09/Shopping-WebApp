@@ -1,0 +1,105 @@
+.header{
+    /* background colour given to the nev-bar component */
+    background-color: #131921;
+    /* display flex is so that the div components appear side by side i.e block elements don't take a separate line */
+    /* by default the display is inline */
+    display: flex;
+    align-items: center;
+    
+    /* sticky top */
+    position: sticky;
+    top:0%;
+
+    /* this gives the navbar priority in all the multiple pages */
+    z-index: 100;
+}
+
+.header__logo{
+    width: 100px;
+    margin: 0 20px;
+    /* 0 for margin top and 20px for right and left margins */
+    margin-top: 12px;
+
+    /* to tell it that in case the size of screen changes keep the logo in perfect ratio of screen rather than making it blurred */
+    object-fit: contain;
+}
+
+.header__search{
+    /* this display flex is to get the icon and the search box side by side */
+    display: flex;
+
+    /* this flex 1 tells the search box to take as max size at it can*/
+    flex: 1;
+}
+
+.header__searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+
+    /* flex 1 is to tell it that you can take as much space you need */
+    flex: 1;
+}
+.header__searchIcon{
+    padding: 5px;
+
+    /* important keyword is necessary -> material UI have their own CSS and thus to ignore that and add our own we use this*/
+
+    height: 22px !important;  
+    background-color: #cd9042;
+}
+
+.header__nav{
+    /* for getting the tags in the same line */
+    display: flex;
+
+    /* for even spacing */
+    justify-content: space-evenly;
+}
+
+.header__link{
+    color: white;
+
+    /*none text decoration removes the underline*/
+    text-decoration: none;
+}
+
+.header__option{
+
+    display: flex;
+    /* we have given a direction for flex -> all children component goes to column */
+    flex-direction: column;
+
+    /* margin gives spacing from outside the element and padding gives spacing from within the element */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__optionLineOne{
+    /* we setting the font size */
+    font-size: 10px;
+}
+
+.header__optionLineTwo{
+    /* we are setting the font size and the weight->for boldness */
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.header__optionBasket{
+
+    /* flex brings them to one line and align center makes them align in a better way */
+    display: flex;
+    align-items: center;
+
+}
+.header__basketCount{
+
+    /* to give the count a space on the right and the left we do this */
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
