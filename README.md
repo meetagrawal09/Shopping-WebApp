@@ -1,3 +1,7 @@
+# Shopping Web Application
+A shopping web app where you can add items to cart and checkout the items too.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
